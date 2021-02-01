@@ -148,6 +148,8 @@ const io = require("socket.io-client");
             },           
             startSocket() {
                 const socket = io(process.env.SOCKET);
+                console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+                console.log(process.env.SOCKET)
                 this.clientSocket = socket;
 
                 let local = this;
