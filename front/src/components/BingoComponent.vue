@@ -2,7 +2,8 @@
     <div class="container">
         <center>
             <div class="columns">
-                <div class="column is-one-fifth">
+             
+                <div class="column">
                     <div v-if="admin == 1">
                         <h1>Painel admin</h1>
 
@@ -19,10 +20,6 @@
                         <button v-if="result == false" v-on:click="setResult()"  class="button is-primary" > Bingar </button>
                         <button v-if="result == true" v-on:click="setResult()" class="button is-danger" > Des Bingar </button>
                     </div>
-                    
-                </div>
-                <div class="column">
-                    
                     <center>
                         <table class="table">
 
