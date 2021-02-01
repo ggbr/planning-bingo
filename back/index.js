@@ -111,6 +111,6 @@ io.on('connection', (socket) => {
 
 console.log(process.env.HOST);
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+server.listen(process.env.POST, () => {
+  console.log('listening on *:'+process.env.POST);
 });
