@@ -147,9 +147,9 @@ const io = require("socket.io-client");
                 this.clientSocket.emit('addAdmin', name);
             },           
             startSocket() {
-                const socket = io(process.env.SOCKET);
+                const socket = io('http://23.22.89.145:5554');
                 console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-                console.log(process.env.SOCKET)
+                console.log('http://23.22.89.145:5554')
                 this.clientSocket = socket;
 
                 let local = this;
