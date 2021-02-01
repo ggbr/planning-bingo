@@ -147,7 +147,7 @@ const io = require("socket.io-client");
                 this.clientSocket.emit('addAdmin', name);
             },           
             startSocket() {
-                const socket = io('http://127.0.0.1:3000');
+                const socket = io(process.env.SOCKET);
                 this.clientSocket = socket;
 
                 let local = this;
